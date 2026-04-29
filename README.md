@@ -1,6 +1,6 @@
 # Nvoip API Examples
 
-Hub central dos SDKs, exemplos e kits de integração públicos da Nvoip API.
+Índice oficial da [Nvoip](https://www.nvoip.com.br/) com SDKs, exemplos e kits públicos para integrar a API v2.
 
 O objetivo deste repositório é facilitar a descoberta do material certo por linguagem, stack e caso de uso, sem obrigar quem usa uma tecnologia específica a baixar um pacote grande com exemplos irrelevantes.
 
