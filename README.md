@@ -1,6 +1,6 @@
 # Nvoip API Examples
 
-[![Nvoip](https://img.shields.io/badge/Nvoip-site-00A3E0?style=flat-square)](https://www.nvoip.com.br/) [![API v2](https://img.shields.io/badge/API-v2-1F6FEB?style=flat-square)](https://www.nvoip.com.br/api/) [![Docs](https://img.shields.io/badge/docs-Apiary-6A737D?style=flat-square)](https://nvoip.docs.apiary.io/) [![Postman](https://img.shields.io/badge/Postman-workspace-FF6C37?style=flat-square)](https://nvoip-api.postman.co/workspace/e671d01f-168a-4c38-8d0e-c217229dd61a/team-quickstart) [![Stack](https://img.shields.io/badge/stack-API%20Examples-1F6FEB?style=flat-square)](https://github.com/Nvoip/nvoip-api-examples) [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![CI](https://github.com/Nvoip/nvoip-api-examples/actions/workflows/ci.yml/badge.svg)](https://github.com/Nvoip/nvoip-api-examples/actions/workflows/ci.yml) [![Nvoip](https://img.shields.io/badge/Nvoip-site-00A3E0?style=flat-square)](https://www.nvoip.com.br/) [![API v2](https://img.shields.io/badge/API-v2-1F6FEB?style=flat-square)](https://www.nvoip.com.br/api/) [![Docs](https://img.shields.io/badge/docs-Apiary-6A737D?style=flat-square)](https://nvoip.docs.apiary.io/) [![Postman](https://img.shields.io/badge/Postman-workspace-FF6C37?style=flat-square)](https://nvoip-api.postman.co/workspace/e671d01f-168a-4c38-8d0e-c217229dd61a/team-quickstart) [![Stack](https://img.shields.io/badge/stack-API%20Examples-1F6FEB?style=flat-square)](https://github.com/Nvoip/nvoip-api-examples) [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
 
 Índice oficial da [Nvoip](https://www.nvoip.com.br/) com SDKs, exemplos e kits públicos para integrar a API v2.
 
@@ -45,6 +45,12 @@ Se você quer automação e operação:
 
 - [nvoip-n8n](https://github.com/Nvoip/nvoip-n8n)
 - [nvoip-zabbix](https://github.com/Nvoip/nvoip-zabbix)
+
+## Guias para suporte e documentação
+
+- [Guias técnicos para base de conhecimento](docs/knowledge-base/README.md)
+- [Release flow dos SDKs](docs/release-flow.md)
+- [Status dos pacotes públicos](docs/package-status.md)
 
 ## Repositórios públicos
 
