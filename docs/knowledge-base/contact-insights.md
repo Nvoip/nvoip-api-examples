@@ -71,8 +71,9 @@ Cada usuário possui uma franquia mensal de consultas:
 
 O objeto `usage` e os headers `X-RateLimit-Limit` e
 `X-RateLimit-Remaining` mostram o consumo atual. Quando a franquia termina, as
-consultas excedentes podem continuar e são registradas para cobrança conforme
-o preço vigente do plano.
+consultas excedentes podem continuar. O tempo de processamento é arredondado
+para cima, com mínimo de um minuto faturável por consulta excedente, ao preço
+inicial de R$ 0,02 por minuto.
 
 Exemplo:
 
@@ -88,17 +89,17 @@ Exemplo:
     "remaining": 123,
     "overage": 0,
     "overageThisRequest": false,
+    "overageBillingUnit": "MINUTE",
+    "billableMinutesThisRequest": 1,
+    "overageBillableMinutes": 0,
     "billingStatus": "INCLUDED"
   }
 }
 ```
 
-Em consultas excedentes precificadas, a resposta também apresenta
-`overageUnitPriceBrl` e `billableAmountBrl`. Consulte sempre o preço comercial
-publicado antes de habilitar chamadas automáticas em grande volume.
-
-Enquanto não houver preço comercial vigente para o excedente, ele pode aparecer
-como `UNPRICED`: o consumo foi medido, mas não deve ser cobrado.
+Em consultas excedentes, a resposta também apresenta `overageUnitPriceBrl`,
+`billableMinutesThisRequest` e `billableAmountBrl`. Consulte sempre o preço
+comercial publicado antes de habilitar chamadas automáticas em grande volume.
 
 ## Boas práticas de integração
 
