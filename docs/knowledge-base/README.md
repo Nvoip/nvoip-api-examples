@@ -20,6 +20,7 @@ O foco é ajudar desenvolvedores a sair do zero usando a API v2 com SDKs, exempl
 12. [Lua](lua.md)
 13. [Shell/Linux](shell-linux.md)
 14. [Zabbix](zabbix.md)
+15. [Como consultar o melhor horário para contato](contact-insights.md)
 
 ## Links oficiais
 

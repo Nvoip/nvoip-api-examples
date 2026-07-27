@@ -16,6 +16,7 @@ Os kits abaixo priorizam os fluxos mais usados da API:
 - envio de templates de WhatsApp
 - envio de SMS
 - consulta de saldo
+- consulta do melhor horário para contato
 
 ## Escolha rápida
 
@@ -49,6 +50,7 @@ Se você quer automação e operação:
 ## Guias para suporte e documentação
 
 - [Guias técnicos para base de conhecimento](docs/knowledge-base/README.md)
+- [Melhor horário para contato pela API V3](docs/knowledge-base/contact-insights.md)
 - [Release flow dos SDKs](docs/release-flow.md)
 - [Status dos pacotes públicos](docs/package-status.md)
 
