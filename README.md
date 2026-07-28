@@ -50,6 +50,7 @@ Se você quer automação e operação:
 ## Guias para suporte e documentação
 
 - [Guias técnicos para base de conhecimento](docs/knowledge-base/README.md)
+- [Enviar template WhatsApp para telefone ou BSUID](docs/knowledge-base/whatsapp-bsuid.md)
 - [Melhor horário para contato pela API V3](docs/knowledge-base/contact-insights.md)
 - [Release flow dos SDKs](docs/release-flow.md)
 - [Status dos pacotes públicos](docs/package-status.md)
