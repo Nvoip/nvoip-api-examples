@@ -7,7 +7,7 @@ Pacote: https://luarocks.org/modules/nvoip/nvoip
 ## Instalação
 
 ```bash
-luarocks install nvoip
+luarocks install nvoip 1.0.1-1
 ```
 
 ## Configuração

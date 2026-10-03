@@ -7,7 +7,7 @@ Importante: o SDK roda no browser, mas as credenciais da Nvoip devem ficar no ba
 ## Instalação
 
 ```bash
-npm install nvoip-web-sdk
+npm install nvoip-web-sdk@1.0.0
 ```
 
 ## Fluxo seguro
@@ -53,3 +53,7 @@ npm install nvoip-web-sdk
 Clone https://github.com/Nvoip/nvoip-web-sdk e abra `examples/mock-demo.html`.
 
 O mock usa o código `123456` e não chama a API real.
+
+## Disponibilidade da versão v3
+
+A publicação desta versão no registry ainda depende da regularização das credenciais de publicação. Enquanto ela não estiver disponível, use o código revisado do repositório ou aguarde a publicação; uma versão antiga do pacote não oferece o caminho v3/OAuth descrito aqui.

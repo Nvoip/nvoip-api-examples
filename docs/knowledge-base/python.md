@@ -7,7 +7,7 @@ Pacote: https://pypi.org/project/nvoip/
 ## Instalação
 
 ```bash
-pip install nvoip
+pip install nvoip==3.0.0
 ```
 
 ## Configuração
