@@ -12,9 +12,11 @@ Install-Module Nvoip -Scope CurrentUser
 
 ## Configuração
 
+Use OAuth `client_credentials` no backend, com um cliente criado na tela Desenvolvedor e os escopos da operação. A API usa `https://api.nvoip.com.br/v3`; o token é emitido em `https://api.nvoip.com.br/auth/oauth2/token`. Guarde o token recebido em `NVOIP_ACCESS_TOKEN`.
+
+Antes de instalar, confira se a versão que usa a v3 já foi publicada; os PRs não atualizam automaticamente os registries.
+
 ```powershell
-$env:NVOIP_NUMBERSIP = "seu_numbersip"
-$env:NVOIP_USER_TOKEN = "seu_user_token"
 $env:NVOIP_OAUTH_CLIENT_ID = "seu_client_id"
 $env:NVOIP_OAUTH_CLIENT_SECRET = "seu_client_secret"
 $env:NVOIP_CALLER = "1049"

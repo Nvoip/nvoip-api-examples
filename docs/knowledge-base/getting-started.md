@@ -1,45 +1,24 @@
-# Primeiros passos com a API Nvoip
+# Primeiros passos com a API Nvoip v3
 
-Este guia mostra o fluxo mínimo para começar a integrar a API v2 da Nvoip.
+Crie um cliente OAuth na tela Desenvolvedor do Painel, com os escopos necessários e `client_credentials` habilitado. Guarde `client_id` e `client_secret` apenas no backend ou no cofre da sua aplicação.
 
-## Antes de começar
+## Autenticação
 
-Você precisa acessar o painel Nvoip e obter:
+A URL da API é `https://api.nvoip.com.br/v3`. A emissão do token é separada:
 
-- `numbersip`
-- `user-token`
-- `client_id`
-- `client_secret`
+```http
+POST https://api.nvoip.com.br/auth/oauth2/token
+Content-Type: application/x-www-form-urlencoded
 
-Use OAuth para integrações comerciais. Evite colocar credenciais no frontend, em repositórios públicos ou em apps mobile sem backend.
-
-## Fluxo recomendado
-
-1. Gere um `access_token` pelo endpoint `/oauth/token`.
-2. Use `Authorization: Bearer ACCESS_TOKEN` nas chamadas da API.
-3. Renove o token antes de expirar.
-4. Use SDKs ou exemplos por linguagem para reduzir erro de integração.
-
-## Variáveis padrão usadas nos exemplos
-
-```bash
-export NVOIP_NUMBERSIP="seu_numbersip"
-export NVOIP_USER_TOKEN="seu_user_token"
-export NVOIP_OAUTH_CLIENT_ID="seu_client_id"
-export NVOIP_OAUTH_CLIENT_SECRET="seu_client_secret"
-export NVOIP_CALLER="1049"
-export NVOIP_TARGET_NUMBER="11999999999"
+grant_type=client_credentials&client_id=SEU_CLIENT_ID&client_secret=SEU_CLIENT_SECRET
 ```
 
-## Principais recursos
+O corpo deve ser codificado como formulário, incluindo caracteres especiais das credenciais. O token recebido vai em `Authorization: Bearer <token>`. Respeite `expires_in`: `client_credentials` não promete refresh token; obtenha um novo access token quando necessário.
 
-- Autenticação OAuth
-- Chamada de saída
-- OTP por SMS, voz ou email
-- SMS
-- WhatsApp templates
-- Consulta de saldo
+## Primeira consulta
 
-## Onde baixar exemplos
+Comece com `GET /v3/balance`, usando uma conta própria de teste. Confirme HTTP 200 e o saldo esperado sem registrar o token. Para outras operações, consulte o [contrato OpenAPI](https://github.com/Nvoip/nvoip-api-v3/blob/main/docs/openapi/openapi.yaml).
 
-Use o índice oficial em https://github.com/Nvoip/nvoip-api-examples.
+Instale a versão do SDK que suporta a v3 após sua publicação. Exemplos de envio exigem destinatário, template, saldo e permissão próprios; não execute um runner com operações de envio por padrão.
+
+Veja o [guia de migração](../migration-v2-v3.md), os [SDKs por linguagem](README.md) e o [Postman](postman.md).
