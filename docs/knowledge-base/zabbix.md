@@ -2,6 +2,8 @@
 
 Repositório: https://github.com/Nvoip/nvoip-zabbix
 
+Este consumidor ainda usa credenciais legadas; sua migração de runtime é acompanhada no NN-5546. Não basta mudar a URL para `/v3`. Para integrações novas, use os SDKs v3 e [OAuth no backend](getting-started.md).
+
 Use este kit para enviar alertas do Zabbix por SMS ou torpedo de voz usando a API v2 da Nvoip.
 
 ## Configuração no servidor

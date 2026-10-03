@@ -1,8 +1,8 @@
 # Nvoip API Examples
 
-[![CI](https://github.com/Nvoip/nvoip-api-examples/actions/workflows/ci.yml/badge.svg)](https://github.com/Nvoip/nvoip-api-examples/actions/workflows/ci.yml) [![Nvoip](https://img.shields.io/badge/Nvoip-site-00A3E0?style=flat-square)](https://www.nvoip.com.br/) [![API v2](https://img.shields.io/badge/API-v2-1F6FEB?style=flat-square)](https://www.nvoip.com.br/api/) [![Docs](https://img.shields.io/badge/docs-Apiary-6A737D?style=flat-square)](https://nvoip.docs.apiary.io/) [![Postman](https://img.shields.io/badge/Postman-workspace-FF6C37?style=flat-square)](https://nvoip-api.postman.co/workspace/e671d01f-168a-4c38-8d0e-c217229dd61a/team-quickstart) [![Stack](https://img.shields.io/badge/stack-API%20Examples-1F6FEB?style=flat-square)](https://github.com/Nvoip/nvoip-api-examples) [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![CI](https://github.com/Nvoip/nvoip-api-examples/actions/workflows/ci.yml/badge.svg)](https://github.com/Nvoip/nvoip-api-examples/actions/workflows/ci.yml) [![Nvoip](https://img.shields.io/badge/Nvoip-site-00A3E0?style=flat-square)](https://www.nvoip.com.br/) [![API v3](https://img.shields.io/badge/API-v3-1F6FEB?style=flat-square)](https://www.nvoip.com.br/api/) [![Docs](https://img.shields.io/badge/docs-OpenAPI-6A737D?style=flat-square)](https://github.com/Nvoip/nvoip-api-v3/blob/main/docs/openapi/README.md) [![Postman](https://img.shields.io/badge/Postman-workspace-FF6C37?style=flat-square)](https://nvoip-api.postman.co/workspace/e671d01f-168a-4c38-8d0e-c217229dd61a/team-quickstart) [![Stack](https://img.shields.io/badge/stack-API%20Examples-1F6FEB?style=flat-square)](https://github.com/Nvoip/nvoip-api-examples) [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
 
-Índice oficial da [Nvoip](https://www.nvoip.com.br/) com SDKs, exemplos e kits públicos para integrar a API v2.
+Índice oficial da [Nvoip](https://www.nvoip.com.br/) com SDKs, exemplos e kits públicos para integrar a API v3.
 
 O objetivo deste repositório é facilitar a descoberta do material certo por linguagem, stack e caso de uso, sem obrigar quem usa uma tecnologia específica a baixar um pacote grande com exemplos irrelevantes.
 
@@ -49,6 +49,8 @@ Se você quer automação e operação:
 
 ## Guias para suporte e documentação
 
+- [Migração da v2 para a v3](docs/migration-v2-v3.md)
+
 - [Guias técnicos para base de conhecimento](docs/knowledge-base/README.md)
 - [Enviar template WhatsApp para telefone ou BSUID](docs/knowledge-base/whatsapp-bsuid.md)
 - [Melhor horário para contato pela API V3](docs/knowledge-base/contact-insights.md)
@@ -71,25 +73,23 @@ Se você quer automação e operação:
 | [nvoip-powershell](https://github.com/Nvoip/nvoip-powershell) | PowerShell | Scripts e automações administrativas |
 | [nvoip-lua](https://github.com/Nvoip/nvoip-lua) | Lua | SDK e exemplos leves para integrações específicas |
 | [nvoip-shell](https://github.com/Nvoip/nvoip-shell) | Shell / Linux | Scripts prontos para servidores Linux |
-| [nvoip-zabbix](https://github.com/Nvoip/nvoip-zabbix) | Zabbix | Alertas via SMS e voz usando a API v2 |
+| [nvoip-zabbix](https://github.com/Nvoip/nvoip-zabbix) | Zabbix | Consumidor legado; migração acompanhada no NN-5546 |
 | [nvoip-n8n](https://github.com/Nvoip/nvoip-n8n) | n8n | Nós e fluxos para automação low-code |
 
 ## Credenciais usadas nos exemplos
 
 A maioria dos kits usa o mesmo conjunto de variáveis de ambiente:
 
-- `NVOIP_NUMBERSIP`
-- `NVOIP_USER_TOKEN`
 - `NVOIP_OAUTH_CLIENT_ID`
 - `NVOIP_OAUTH_CLIENT_SECRET`
 - `NVOIP_ACCESS_TOKEN`
 
-Quando o fluxo exigir autenticação OAuth, a preferência atual é sempre por `client_id` + `client_secret`.
+Use `client_credentials` em `https://api.nvoip.com.br/auth/oauth2/token` e `Authorization: Bearer` nas operações em `https://api.nvoip.com.br/v3`. O fluxo antigo com token do usuário e `napikey` é exclusivo da compatibilidade.
 
 ## Links oficiais
 
 - [Site da Nvoip](https://www.nvoip.com.br/)
-- [Documentação da API](https://nvoip.docs.apiary.io/)
+- [Documentação da API](https://github.com/Nvoip/nvoip-api-v3/blob/main/docs/openapi/README.md)
 - [Página da API](https://www.nvoip.com.br/api/)
 - [Workspace Postman](https://nvoip-api.postman.co/workspace/e671d01f-168a-4c38-8d0e-c217229dd61a/team-quickstart)
 

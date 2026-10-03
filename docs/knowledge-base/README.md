@@ -2,7 +2,10 @@
 
 Este diretório contém artigos em Markdown prontos para adaptação e publicação na base de conhecimento da Nvoip.
 
-O foco é ajudar desenvolvedores a sair do zero usando a API v2 com SDKs, exemplos por linguagem, Postman e web SDK.
+O foco é ajudar desenvolvedores a sair do zero usando a API v3 com SDKs, exemplos por linguagem, Postman e web SDK.
+
+- [Guia de migração v2 → v3](../migration-v2-v3.md)
+- [MCP e OAuth compartilhado](mcp.md)
 
 ## Ordem sugerida de publicação
 
@@ -26,6 +29,6 @@ O foco é ajudar desenvolvedores a sair do zero usando a API v2 com SDKs, exempl
 ## Links oficiais
 
 - Site: https://www.nvoip.com.br/
-- Documentação API: https://nvoip.docs.apiary.io/
+- Documentação API: https://github.com/Nvoip/nvoip-api-v3/blob/main/docs/openapi/README.md
 - Postman: https://nvoip-api.postman.co/workspace/e671d01f-168a-4c38-8d0e-c217229dd61a/team-quickstart
 - GitHub: https://github.com/Nvoip/nvoip-api-examples
