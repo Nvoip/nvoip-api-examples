@@ -29,7 +29,7 @@ Use SemVer:
 | `nvoip-web-sdk` | npm | `nvoip-web-sdk` |
 | `nvoip-python` | PyPI | `nvoip` |
 | `nvoip-php` | Packagist | `nvoip/nvoip-php` |
-| `nvoip-go` | Go Modules | `github.com/Nvoip/nvoip-go` |
+| `nvoip-go` | Go Modules | `github.com/Nvoip/nvoip-go/v3` |
 | `nvoip-java` | Maven Central | `br.com.nvoip:nvoip-java` |
 | `nvoip-dotnet` | NuGet | `Nvoip` |
 | `nvoip-ruby` | RubyGems | `nvoip` |

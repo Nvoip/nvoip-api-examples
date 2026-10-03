@@ -6,7 +6,7 @@
 | Web SDK | npm `nvoip-web-sdk` | Publicado |
 | Python | PyPI `nvoip` | Publicado |
 | PHP | Packagist `nvoip/nvoip-php` | Publicado |
-| Go | Go Modules `github.com/Nvoip/nvoip-go` | Publicado |
+| Go | Go Modules `github.com/Nvoip/nvoip-go/v3` | Publicado |
 | Java | Maven Central `br.com.nvoip:nvoip-java` | Em monitoramento de indexação |
 | .NET | NuGet `Nvoip` | Publicado |
 | Ruby | RubyGems `nvoip` | Publicado |
