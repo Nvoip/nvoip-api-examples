@@ -7,7 +7,7 @@ Pacote: https://packagist.org/packages/nvoip/nvoip-php
 ## Instalação
 
 ```bash
-composer require nvoip/nvoip-php
+composer require nvoip/nvoip-php:^3.0
 ```
 
 ## Configuração

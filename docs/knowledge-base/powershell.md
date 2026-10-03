@@ -7,7 +7,7 @@ Pacote: https://www.powershellgallery.com/packages/Nvoip
 ## Instalação
 
 ```powershell
-Install-Module Nvoip -Scope CurrentUser
+Install-Module Nvoip -RequiredVersion 1.0.0 -Scope CurrentUser
 ```
 
 ## Configuração

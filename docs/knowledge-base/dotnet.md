@@ -7,7 +7,7 @@ Pacote: https://www.nuget.org/packages/Nvoip
 ## Instalação
 
 ```bash
-dotnet add package Nvoip
+dotnet add package Nvoip --version 1.0.0
 ```
 
 ## Configuração

@@ -10,7 +10,7 @@ Pacote Maven: `br.com.nvoip:nvoip-java`
 <dependency>
   <groupId>br.com.nvoip</groupId>
   <artifactId>nvoip-java</artifactId>
-  <version>0.1.0</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
@@ -37,3 +37,7 @@ mvn -q exec:java
 ## Recursos cobertos
 
 OAuth, chamadas, OTP, WhatsApp templates, SMS e saldo.
+
+## Disponibilidade da versão v3
+
+A publicação desta versão no registry ainda depende da regularização das credenciais de publicação. Enquanto ela não estiver disponível, use o código revisado do repositório ou aguarde a publicação; uma versão antiga do pacote não oferece o caminho v3/OAuth descrito aqui.

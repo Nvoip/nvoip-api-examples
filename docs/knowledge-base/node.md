@@ -7,7 +7,7 @@ Pacote: https://www.npmjs.com/package/nvoip-node
 ## Instalação
 
 ```bash
-npm install nvoip-node
+npm install nvoip-node@3.0.0
 ```
 
 ## Configuração
@@ -35,3 +35,7 @@ npm run wa:list
 ## Recursos cobertos
 
 OAuth, chamadas, OTP, WhatsApp templates, SMS e saldo.
+
+## Disponibilidade da versão v3
+
+A publicação desta versão no registry ainda depende da regularização das credenciais de publicação. Enquanto ela não estiver disponível, use o código revisado do repositório ou aguarde a publicação; uma versão antiga do pacote não oferece o caminho v3/OAuth descrito aqui.
