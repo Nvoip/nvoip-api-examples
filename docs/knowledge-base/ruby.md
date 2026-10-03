@@ -7,7 +7,7 @@ Pacote: https://rubygems.org/gems/nvoip
 ## Instalação
 
 ```bash
-gem install nvoip -v 3.0.0
+gem install nvoip -v 3.0.1
 ```
 
 ## Configuração
