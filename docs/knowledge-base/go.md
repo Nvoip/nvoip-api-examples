@@ -2,12 +2,12 @@
 
 Repositório: https://github.com/Nvoip/nvoip-go
 
-Pacote: https://pkg.go.dev/github.com/Nvoip/nvoip-go
+Pacote: https://pkg.go.dev/github.com/Nvoip/nvoip-go/v3
 
 ## Instalação
 
 ```bash
-go get github.com/Nvoip/nvoip-go
+go get github.com/Nvoip/nvoip-go/v3@v3.0.0
 ```
 
 ## Configuração
