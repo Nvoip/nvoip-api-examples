@@ -4,7 +4,7 @@ Situação verificada em 3 de outubro de 2026. As versões abaixo contêm a migr
 
 | SDK | Registry | Versão v3 | Publicação |
 | --- | --- | --- | --- |
-| Node.js | npm `nvoip-node` | 3.0.0 | Pendente: acesso de publicação OIDC ainda não confirmado |
+| Node.js | npm `nvoip-node` | 3.0.0 | Publicado; instalação do npm e OAuth/saldo conferidos |
 | Web SDK | npm `nvoip-web-sdk` | 1.0.0 | Pendente: acesso de publicação OIDC ainda não confirmado |
 | Python | PyPI `nvoip` | 3.0.1 | Publicado |
 | PHP | Packagist `nvoip/nvoip-php` | 3.0.0 | Publicado |
@@ -16,6 +16,6 @@ Situação verificada em 3 de outubro de 2026. As versões abaixo contêm a migr
 | Lua | LuaRocks `nvoip` | 1.0.1-1 | Publicado; instalação do registry e OAuth/saldo conferidos |
 | Shell/Linux | Homebrew tap `Nvoip/tap/nvoip-shell` | 1.0.0 | Publicado |
 
-Para Node e Web, use o código revisado e a tag da versão no repositório ou aguarde a disponibilização no registry. Não instale uma versão anterior esperando o comportamento novo.
+Para Web, use o código revisado e a tag da versão no repositório ou aguarde a disponibilização no registry. Não instale uma versão anterior esperando o comportamento novo.
 
 Publicação e teste funcional são estados separados. Os exemplos de instalação em cada guia fixam a versão desta migração. Nenhuma integração servidor a servidor deve guardar `client_secret` no navegador.
