@@ -56,4 +56,4 @@ O mock usa o código `123456` e não chama a API real.
 
 ## Disponibilidade da versão v3
 
-A publicação desta versão no registry ainda depende da regularização das credenciais de publicação. Enquanto ela não estiver disponível, use o código revisado do repositório ou aguarde a publicação; uma versão antiga do pacote não oferece o caminho v3/OAuth descrito aqui.
+A versão 1.0.0 está disponível no [npm](https://www.npmjs.com/package/nvoip-web-sdk/v/1.0.0), com recursos em `/v3` e OAuth no backend. O pacote instalado do registry foi conferido em servidor HTTP local para OTP/2FA com respostas simuladas da API. O helper OAuth também foi testado com token e consulta de saldo reais na conta de QA autorizada; não houve envio real de OTP, SMS ou ligação.
