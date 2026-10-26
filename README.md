@@ -17,6 +17,7 @@ Os kits abaixo priorizam os fluxos mais usados da API:
 - envio de SMS
 - consulta de saldo
 - consulta do melhor horário para contato
+- consulta e webhook de entrega de SMS e WhatsApp
 
 ## Escolha rápida
 
@@ -53,6 +54,7 @@ Se você quer automação e operação:
 
 - [Guias técnicos para base de conhecimento](docs/knowledge-base/README.md)
 - [Enviar template WhatsApp para telefone ou BSUID](docs/knowledge-base/whatsapp-bsuid.md)
+- [Status de entrega de SMS e WhatsApp por webhook](docs/knowledge-base/message-delivery-webhooks.md)
 - [Melhor horário para contato pela API V3](docs/knowledge-base/contact-insights.md)
 - [Release flow dos SDKs](docs/release-flow.md)
 - [Status dos pacotes públicos](docs/package-status.md)

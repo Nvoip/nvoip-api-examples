@@ -25,6 +25,7 @@ O foco é ajudar desenvolvedores a sair do zero usando a API v3 com SDKs, exempl
 14. [Zabbix](zabbix.md)
 15. [Como enviar template WhatsApp para telefone ou BSUID](whatsapp-bsuid.md)
 16. [Como consultar o melhor horário para contato](contact-insights.md)
+17. [Status de entrega de SMS e WhatsApp por webhook](message-delivery-webhooks.md)
 
 ## Links oficiais
 
