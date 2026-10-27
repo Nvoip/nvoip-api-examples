@@ -12,7 +12,8 @@ GET /v3/sms/messages/{messageId}
 GET /v3/wa/messages/{messageId}
 ```
 
-Autentique as consultas com o access token OAuth 2.0 no header padrão.
+Autentique as consultas com o access token OAuth 2.0 no header padrão ou com
+uma chave API v3 no header `X-Nvoip-Api-Key`.
 
 Os campos têm papéis diferentes:
 
@@ -29,21 +30,46 @@ POST /v3/webhooks
 Content-Type: application/json
 
 {
+  "name": "Status de mensagens",
   "url": "https://example.com/nvoip/webhooks",
-  "events": ["sms.status.updated", "whatsapp.status.updated"]
+  "events": ["sms.status.updated", "whatsapp.status.updated"],
+  "protection": {
+    "authType": "basic",
+    "username": "nvoip-webhook",
+    "secret": "<senha-forte>",
+    "allowedIpRanges": ["<IP_PUBLICO>/32"]
+  }
 }
 ```
 
-Autentique a criação com o access token OAuth 2.0 no header padrão.
+Autentique a gestão com OAuth 2.0 ou com uma chave API v3 criada em
+`/developer`. A chave precisa conter `sms:query` ou `whatsapp:send`, de acordo
+com os eventos usados pela integração.
 
 O destino precisa ser HTTPS público na porta 443. A resposta contém um
 `secret` somente na criação; salve-o em um cofre de segredos. Listagens e
 alterações posteriores não o devolvem.
 
-Use `GET /v3/webhooks` para listar, `PUT /v3/webhooks/{id}` para alterar URL e
-eventos e `POST /v3/webhooks/{id}/deactivate` para interromper novas entregas.
+O HMAC da Nvoip permanece sempre ativo. A proteção opcional do destino aceita
+um modo por assinatura: `basic`, `bearer` ou `header`. No modo `header`, use um
+nome `X-*` que não seja reservado pela Nvoip. `allowedIpRanges` limita os IPs
+públicos aos quais o dispatcher pode se conectar depois de resolver a URL; não
+é a lista de IPs de saída da Nvoip. Senhas e tokens são cifrados, nunca aparecem
+na listagem e não devem ser colocados na query string da URL.
+
+Use `GET /v3/webhooks` para listar e `PUT /v3/webhooks/{id}` para alterar nome,
+URL, eventos e proteção. Ao editar, omita `protection.secret` para manter o
+segredo atual. Os controles de estado são:
+
+- `POST /v3/webhooks/{id}/pause`: pausa novas entregas;
+- `POST /v3/webhooks/{id}/resume`: retoma apenas eventos futuros;
+- `POST /v3/webhooks/{id}/deactivate`: desativa definitivamente.
+
+Uma assinatura inativa não pode ser editada nem retomada. Eventos ocorridos
+durante a pausa não são enviados depois.
+
 A assinatura começa a valer na criação: eventos históricos não são enviados.
-O token OAuth precisa ter `sms:query` ou `whatsapp:send`, de acordo com o canal
+A credencial precisa ter `sms:query` ou `whatsapp:send`, de acordo com o canal
 integrado.
 
 ## Validar a assinatura
