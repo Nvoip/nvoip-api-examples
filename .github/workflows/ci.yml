@@ -7,9 +7,14 @@ on:
       - main
       - master
 
+permissions:
+  contents: read
+
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - run: find docs -name '*.md' -print
